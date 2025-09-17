@@ -1,5 +1,4 @@
 import weatherIcons from "@/lib/weatherIcons";
-import { blue } from "colors";
 import { useState } from "react"
 export default function CurrentWeather({weatherData, isLoading}) {
     const timestamp =  weatherData.current.time
