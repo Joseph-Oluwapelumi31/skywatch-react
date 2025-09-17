@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url ](https://your-solution-url.com)
-- Live Site URL: [live site url coming](https://skywatch-react.vercel.app/)
+- Live Site URL: [live site url](https://skywatch-react.vercel.app/)
 
 ## My process
 
