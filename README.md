@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Weather app solution
 
-## Getting Started
+This is a solution to the [Weather app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Search for weather information by entering a location in the search bar
+- View current weather conditions including temperature, weather icon, and location details
+- See additional weather metrics like "feels like" temperature, humidity percentage, wind speed, and precipitation amounts
+- Browse a 7-day weather forecast with daily high/low temperatures and weather icons
+- View an hourly forecast showing temperature changes throughout the day
+- Switch between different days of the week using the day selector in the hourly forecast section
+- Toggle between Imperial and Metric measurement units via the units dropdown 
+- Switch between specific temperature units (Celsius and Fahrenheit) and measurement units for wind speed (km/h and mph) and precipitation (millimeters) via the units dropdown
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+![](./public/assets/images/screenshot.png)
+
+
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- Tailwind
+
+
+### What I learned
+During this project, I learned: 
+- How to set up and structure project using tailwind and Next.js
+- Improved my understanding of concepts like state management and API call
+
+
+```jsx
+return(
+        <>
+            <Header  weatherData={weather} unit={unit} setUnit={setUnit}/>
+            <InputField location={location} error={error} setLocation={setLocation} handleSubmit={handleSubmit}/>
+            {error ? (
+            <p className='text-center'>{error}</p>
+            ) : weather ? (
+                <Content location={location}  weatherData={weather} isLoading={loading} />
+            ): null
+            }
+            
+        
+        
+        </>
+    )
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+In the future I plan to improve this project by: 
+- Adding [new features](light-mode, notifications, authentication)
+- Implementing [advanced feature](Typescript)
+- Improving UI/UX design for a smoother user experience.
+- Write texts to ensure project stability.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Useful resources
 
-## Learn More
+- [Example resource 1](https://tailwindcss.com/docs) - This helped me for styling with tailwind. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://open-meteo.com/) - This is the free weather API i used it was super amazing
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Website - Loading...
+- Frontend Mentor - [@Joseph-Oluwapelumi31](https://www.frontendmentor.io/profile/Joseph-Oluwapelumi31)
+- Twitter -Loading...
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
