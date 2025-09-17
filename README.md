@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url ](https://your-solution-url.com)
+- Solution URL: [Solution url ](https://github.com/Joseph-Oluwapelumi31/skywatch-react/tree/main)
 - Live Site URL: [live site url](https://skywatch-react.vercel.app/)
 
 ## My process
