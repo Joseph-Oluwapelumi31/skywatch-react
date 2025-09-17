@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url coming](https://your-solution-url.com)
-- Live Site URL: [live site url coming](https://your-live-site-url.com)
+- Solution URL: [Solution url ](https://your-solution-url.com)
+- Live Site URL: [live site url coming](https://skywatch-react.vercel.app/)
 
 ## My process
 
@@ -93,8 +93,8 @@ In the future I plan to improve this project by:
 
 ### Useful resources
 
-- [Example resource 1](https://tailwindcss.com/docs) - This helped me for styling with tailwind. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://open-meteo.com/) - This is the free weather API i used it was super amazing
+- [Tailwind docs](https://tailwindcss.com/docs) - This helped me for styling with tailwind. I really liked this pattern and will use it going forward.
+- [Open meteo api](https://open-meteo.com/) - This is the free weather API i used it was super amazing
 
 
 ## Author
